@@ -11,13 +11,16 @@ Sequência para instalação:
 
 $ npm create vite@latest
 
-Project name: blog
+#Project name: blog
 
-Framework: REACT
+#Select a framework: REACT
 
-Variant:  TypeScript + SWC
+#Select a variant:  TypeScript + SWC
 
 projeto: $ cd blog
+
+$ npm run dev
+
 
 
 
