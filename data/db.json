@@ -1,0 +1,22 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Meu Primeiro Post",
+            "body": "Lorem impsum....",
+            "author": "Ana"
+        },
+        {
+            "id": 2,
+            "title": "Vejam esta 10 coisas",
+            "body": "Lorem impsum....",
+            "author": "Maria"
+        },
+        {
+            "id": 3,
+            "title": "Como fazer algo",
+            "body": "Lorem impsum....",
+            "author": "João"
+        }
+    ]
+}
