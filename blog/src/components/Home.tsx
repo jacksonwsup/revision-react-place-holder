@@ -1,8 +1,11 @@
 export function Home() {
-    const title = "Bem-vindo!";
+
+    let title = 'Bem-vindo!';
+    console.log(title)
 
     function handleClick() {
-        alert("você clicou no botão");
+        title = "tchau!"
+        alert(title);
     }
 
     return (
