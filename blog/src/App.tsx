@@ -1,9 +1,16 @@
+import { Home } from "./components/Home"
+import { Navbar } from "./components/Navbar"
 
 export function App() {
 
   return (
     <>
-      <h1>Teste</h1>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Home />
+        </div>
+      </div>
     </>
   )
 }
