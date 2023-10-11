@@ -22,6 +22,10 @@ projeto: $ cd blog
 $ npm run dev
 
 
+## Criar servidor JSON Server 
+
+$ npx json-server --watch data/db.json --port 8000 data/db.json
+
 
 
 
