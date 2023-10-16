@@ -2,51 +2,38 @@ import { useEffect, useState } from "react";
 
 export function useFetch<T>(url: string) {
 
-    // definindo o Generics para receber um array de PostData
-    // hook - useState
-    const [data, setData] = useState<T | null>(null);
-    const [isLoading, setIsLoading] = useState<boolean>(false);
-    //Error....
+  const [data, setData] = useState<T | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
-    //hook - useEffect ( Para alteração pode existir um efeito colateral )
-    useEffect(() => {
+  useEffect(() => {
 
-        setIsLoading(true);
+    setIsLoading(true);
 
-        //event-loop ( pesquisar no JavaScript) 49:00
+    setTimeout(() => {
 
-        setTimeout(() => {
-
-        fetch(url)
+      fetch(url)
         .then(res => {
-            console.log(res);
-            if (!res.ok) {
-                if (res.status === 400) {
-                    throw new Error("Aguarde, servidor em manutenção");
-                } else if (res.status === 500) {
-                    throw new Error("Servidor inacessível, Aguarde o retorno!");
-                } else {
-                    throw new Error("Erro ao buscar os posts.");
-                }
-            }
-            return res.json();
+          if (!res.ok) {
+            throw new Error("Error in data fetching...");
+          }
+          return res.json();
         })
         .then(data => {
-            setData(data);
-            setIsLoading(false);
+          setData(data);
+          setIsLoading(false);
         })
         .catch(error => {
-            console.error(error);
-            setIsLoading(false);
+          console.error(error);
+          setIsLoading(false);
         });
-        
-        }, 2000);
 
-    }, [url]);
+      }, 1);
 
-    return {
-        data,
-        isLoading
-    }
+  }, [url]);
+
+  return {
+    data,
+    isLoading,
+  }
 
 }

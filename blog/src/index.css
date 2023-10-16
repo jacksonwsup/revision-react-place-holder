@@ -53,15 +53,15 @@
 }
 
 /* blog details page */
-.blog-details h2 {
+.blog-edit h2 {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 10px;
 }
-.blog-details div {
+.blog-edit div {
   margin: 20px 0;
 }
-.blog-details button {
+.blog-edit button {
   background: #f1356d;
   color: #fff;
   border: 0;
@@ -96,40 +96,6 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* edit new blog form */
-.edit {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.edit label {
-  text-align: left;
-  display: block;
-}
-.edit h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
-}
-.edit input,
-.edit textarea,
-.edit select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-.edit button {
   background: #f1356d;
   color: #fff;
   border: 0;

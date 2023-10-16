@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { NewPost } from "./components/NewPost";
+import { BlogPost } from "./components/BlogPost";
 import { EditPost } from "./components/EditPost";
 
 export function App() {
-
+  
   return (
-    //O roteamento da aplicação abrange todo o que está no Router
     <Router>
       <div className="App">
         <Navbar />
@@ -16,12 +16,12 @@ export function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<NewPost />} />
-            <Route path="/edit" element={<EditPost />} />
+            <Route path="/post/:id" element={<BlogPost />} />
+            <Route path="/edit/:id" element={<EditPost />} />
           </Routes>
         </div>
       </div>
     </Router>
   )
-}
 
-export default App
+}

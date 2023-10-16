@@ -3,12 +3,12 @@
     {
       "id": 1,
       "title": "Meu Primeiro Post",
-      "body": "Lorem impsum....",
-      "author": "Ana"
+      "body": "Lorem impsum....a",
+      "author": "João"
     },
     {
       "id": 2,
-      "title": "Vejam esta 10 coisas",
+      "title": "Vejam estas 10 coisas",
       "body": "Lorem impsum....",
       "author": "Maria"
     },
@@ -19,13 +19,16 @@
       "author": "João"
     },
     {
-      "title": "a",
-      "body": "a",
-      "author": "",
-      "id": 4
+      "id": 4,
+      "title": "TESTE5",
+      "body": "12311",
+      "author": "Maria"
+    },
+    {
+      "title": "TESTE4a",
+      "body": "65432asdasd1",
+      "author": "João",
+      "id": 5
     }
-  ],
-  "editposts": [
-    {}
   ]
 }

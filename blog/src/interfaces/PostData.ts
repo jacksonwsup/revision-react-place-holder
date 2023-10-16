@@ -3,4 +3,4 @@ export interface PostData {
     title: string;
     body: string;
     author: string;
-}
+  }
